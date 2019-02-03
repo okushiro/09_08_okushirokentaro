@@ -19,23 +19,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUl-1k-2AA">
-                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <rect key="frame" x="0.0" y="183.5" width="375" height="300"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="bQW-Co-67K"/>
                                     <constraint firstAttribute="height" constant="300" id="eTN-Mz-9gl"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高低差を測ろう" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcO-eM-phF">
+                                <rect key="frame" x="20" y="533.5" width="335" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lUl-1k-2AA" secondAttribute="trailing" id="8kR-rO-OIK"/>
+                            <constraint firstItem="lUl-1k-2AA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ASM-iB-2tG"/>
                             <constraint firstItem="lUl-1k-2AA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Edm-bz-TUG"/>
                             <constraint firstItem="lUl-1k-2AA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dYC-MP-ORB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZcO-eM-phF" secondAttribute="trailing" constant="20" id="hZz-hJ-vps"/>
+                            <constraint firstItem="ZcO-eM-phF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lAk-WK-kZr"/>
+                            <constraint firstItem="ZcO-eM-phF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oXI-Oz-yT1"/>
+                            <constraint firstItem="ZcO-eM-phF" firstAttribute="top" secondItem="lUl-1k-2AA" secondAttribute="bottom" constant="50" id="ru2-Ou-ma1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="mapCanvasView" destination="lUl-1k-2AA" id="5pT-gD-47h"/>
+                        <outlet property="outputLabel" destination="ZcO-eM-phF" id="gjv-m1-yvg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
