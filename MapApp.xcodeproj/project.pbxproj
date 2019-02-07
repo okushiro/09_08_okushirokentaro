@@ -13,6 +13,8 @@
 		D42B2D332206551A002D3BC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42B2D312206551A002D3BC4 /* Main.storyboard */; };
 		D42B2D352206551B002D3BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42B2D342206551B002D3BC4 /* Assets.xcassets */; };
 		D42B2D382206551B002D3BC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42B2D362206551B002D3BC4 /* LaunchScreen.storyboard */; };
+		D42B2DC2220B1C5A002D3BC4 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42B2DC1220B1C5A002D3BC4 /* CameraViewController.swift */; };
+		D42B2DC4220B1D7D002D3BC4 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42B2DC3220B1D7D002D3BC4 /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D42B2D342206551B002D3BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D42B2D372206551B002D3BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D42B2D392206551B002D3BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42B2DC1220B1C5A002D3BC4 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		D42B2DC3220B1D7D002D3BC4 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +50,6 @@
 				4A7DEE60933A6F51C3D1C01D /* Pods-MapApp.debug.xcconfig */,
 				A2BBB199552787CBEA3EA49A /* Pods-MapApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +88,8 @@
 				D42B2D342206551B002D3BC4 /* Assets.xcassets */,
 				D42B2D362206551B002D3BC4 /* LaunchScreen.storyboard */,
 				D42B2D392206551B002D3BC4 /* Info.plist */,
+				D42B2DC1220B1C5A002D3BC4 /* CameraViewController.swift */,
+				D42B2DC3220B1D7D002D3BC4 /* DrawView.swift */,
 			);
 			path = MapApp;
 			sourceTree = "<group>";
@@ -236,6 +241,8 @@
 			files = (
 				D42B2D302206551A002D3BC4 /* ViewController.swift in Sources */,
 				D42B2D2E2206551A002D3BC4 /* AppDelegate.swift in Sources */,
+				D42B2DC4220B1D7D002D3BC4 /* DrawView.swift in Sources */,
+				D42B2DC2220B1C5A002D3BC4 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

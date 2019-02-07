@@ -17,8 +17,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     
     @IBOutlet weak var outputLabel: UILabel!
     
-//    let defaultLatitude = 35.6675497
-//    let defaultLongitude = 139.7137988
     let defaultZoomLevel:Float = 14.0
     var mapView : GMSMapView!
     var locationManager = CLLocationManager()
@@ -29,8 +27,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     var lng:Double = 139.7137988
     var currentValue:Double = 0.0
     
-//    var markerLat:Double = 35.6675497
-//    var markerLng:Double = 139.7137988
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,10 +89,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
                     let json = JSON(response.result.value as Any)
                     if let value = json["elevation"].double{
                         self.currentValue = value
+                        UserDefaults.standard.set(String(value), forKey: "elevation")
                     }
                 }
-            
-//            print("緯度:\(String(describing: coordinate.latitude)) 経度:\(String(describing: coordinate.longitude)) 取得時刻:\(String(describing: locations.last?.timestamp.description))")
             
         }
     }
@@ -131,9 +126,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
                     }else if output < 0 {
                         self.view.backgroundColor = UIColor.init(red: 67/255, green: 135/255, blue: 233/255, alpha: 0.7)
                     }
-                    
                 }
             }
         }
+    
+    @IBAction func didTouchCameraBtn(_ sender: Any) {
+        self.performSegue(withIdentifier: "toCamera", sender: nil)
+    }
+    
 }
 
